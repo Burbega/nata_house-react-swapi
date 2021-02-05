@@ -1,0 +1,167 @@
+.header {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffc909;
+}
+
+/* Start of --- Set the intro animation, color, size, position and hide the text --- */
+.intro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: intro 6s ease-out 1s;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1199.98px) {
+  .intro {
+    font-size: 250%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    font-size: 300%;
+  }
+}
+
+/* animations */
+@keyframes intro {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  20% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* End of --- Set the intro animation, color, size, position and hide the text --- */
+
+/* Start of --- Set Star Wars logo animation, color, size and position  */
+.logo {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  margin-top: 5%;
+  animation: logo 9s ease-in-out 9s;
+  opacity: 0;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  width: 18em;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* animations */
+@keyframes logo {
+  from {
+    opacity: 1;
+    transform: scale(2.75);
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+/* End of --- Set Star Wars logo animation, color, size and position  */
+
+/* Start of --- Set Skyrunner logo animation, color, size and position  */
+.skyrunner {
+  position: absolute;
+  z-index: 1;
+  margin-top: 5%;
+  animation: skyrunner 2s linear 18s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* responsiveness */
+@media screen and (max-width: 280px) {
+  .skyrunner {
+    top: 20%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 280.02px) and (max-width: 320px) {
+  .skyrunner {
+    top: 23%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 320.02px) and (max-width: 374.98px) {
+  .skyrunner {
+    top: 21%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 413.98px) {
+  .skyrunner {
+    top: 16.5%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 539.98px) {
+  .skyrunner {
+    top: 18.5%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .skyrunner {
+    top: 15%;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768.02px) and (max-width: 1199.98px) {
+  .skyrunner {
+    top: 10%;
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skyrunner {
+    top: 15%;
+    width: 14%;
+  }
+}
+
+/* animations */
+@keyframes skyrunner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+/* End of --- Set Skyrunner logo animation, color, size and position  */

@@ -1,0 +1,83 @@
+.origin {
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* perspective gives us a 3d space within the element to work with */
+  /* perspective also has the effect of pushing the content "down" */
+  perspective: 600px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 200vh;
+  }
+}
+
+@media screen and (min-width: 768.02px) and (max-width: 1199.98px) {
+  .wrapper {
+    height: 150vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    height: 250vh;
+  }
+}
+
+/* Spaceships list */
+.scroll-text {
+  color: #ffc909;
+  line-height: 2em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* responsiveness */
+@media screen and (max-width: 539.98px) {
+  .scroll-text {
+    animation: scroll 120s linear forwards;
+    font-size: 8vw;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .scroll-text {
+    animation: scroll 60s linear forwards;
+    font-size: 5vw;
+    width: 80%;
+  }
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* animations */
+@keyframes scroll {
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    top: -7500px;
+    transform: translateZ(-2500px) rotateX(21deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,118 @@
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.custom-input-box {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+.custom-input-box label {
+  color: #ffc909;
+  margin-top: 20px;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+.compute-subtitle {
+  color: #ffc909;
+  margin-top: 20px;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+.custom-input-box h2 {
+  font-size: 20px;
+  color: #f1356d;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+.custom-input-box input {
+  width: 90%;
+  padding: 6px 6px;
+  border: 1px solid #ddd;
+  color: #ffc909;
+  margin-top: 10px;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+.custom-input-box button {
+  background-color: #ffc909;
+  color: #000;
+  font-weight: bold;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.custom-input-box button:hover {
+  background: #cea203;
+}
+
+.home {
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: skyrunner 2s linear 20s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* responsiveness */
+@media screen and (max-width: 280px) {
+  .home {
+    margin-top: 60%;
+  }
+}
+
+@media screen and (min-width: 280.02px) and (max-width: 320px) {
+  .home {
+    margin-top: 52%;
+  }
+}
+
+@media screen and (min-width: 320.02px) and (max-width: 539.98px) {
+  .home {
+    margin-top: 48%;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .home {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 768.02px) and (max-width: 1199.98px) {
+  .home {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    margin-top: 15%;
+  }
+}
+
+/* animations */
+@keyframes home {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
